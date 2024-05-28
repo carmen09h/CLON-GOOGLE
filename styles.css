@@ -1,0 +1,192 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; /* Mostrar los elementos en un diseño de caja flexible */
+    flex-direction: column; /* Apilar los elementos verticalmente */
+    min-height: 100vh; /* Establecer altura mínima del cuerpo igual al viewport */
+}
+
+/* Estilos para el encabezado */
+header {
+    width: 100%;
+    height: 55px;
+}
+
+/* Estilos para la barra de navegación en el encabezado */
+header nav {
+    display: flex; /* Mostrar los elementos en línea */
+    justify-content: flex-end; /* Alinear los elementos a la derecha */
+}
+
+/* Estilos para la sección derecha de la barra de navegación */
+header nav .nav-right-section {
+    list-style: none; /* Eliminar viñetas de la lista */
+    width: 250px; /* Ancho fijo para la sección */
+    display: flex; /* Mostrar los elementos en línea */
+    justify-content: space-between; /* Distribuir los elementos uniformemente */
+    align-items: center; /* Alinear los elementos verticalmente */
+    height: auto; /* Altura automática */
+}
+
+/* Estilos para los enlaces en la barra de navegación */
+nav .nav-right-section a {
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    color: rgba(0, 0, 0, .87); /* Color del texto */
+}
+
+/* Estilos para el ícono de menú en la barra de navegación */
+nav .nav-right-section .menu {
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png); /* Imagen de ícono de menú */
+    width: 20px; /* Ancho del ícono */
+    height: 20px; /* Altura del ícono */
+    background-size: contain; /* Ajustar el tamaño del ícono al contenedor */
+    background-repeat: no-repeat; /* No repetir el ícono */
+}
+
+/* Estilos para la imagen de perfil en la barra de navegación */
+nav .nav-right-section img {
+    margin-right: 9px; /* Margen a la derecha */
+    border-radius: 90%; /* Borde redondeado */
+}
+
+/* Estilos para la sección principal */
+main {
+    margin-top: 100px; /* Reducir margen superior */
+    text-align: center; /* Alinear al centro */
+    flex: 1; /* Ocupar el espacio restante */
+}
+
+/* Estilos para el logotipo principal */
+main .main-logo {
+    width: 600px; /* Ancho fijo */
+    margin: 0 auto; /* Centrar horizontalmente */
+    margin-bottom: 20px; /* Reducir margen inferior */
+}
+
+/* Estilos para la imagen del logotipo */
+main .main-logo img {
+    height: 92px; /* Ajustar altura de la imagen */
+}
+
+/* Estilos para la sección de entrada principal */
+main .main-input {
+    width: 530px; /* Ancho fijo */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Estilos para el contenedor de entrada principal */
+main .main-input-container {
+    width: 500px; /* Ancho fijo */
+    border: 1px solid #dfe1e5; /* Borde con color */
+    border-radius: 35px; /* Borde redondeado */
+    display: flex; /* Mostrar los elementos en línea */
+    align-items: center; /* Alinear los elementos verticalmente */
+    padding: 5px; /* Relleno interno */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Estilos para el campo de entrada principal */
+main .main-input input {
+    height: 45px; /* Altura fija */
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno de enfoque */
+    width: 360px; /* Ajustar ancho para dejar espacio para el icono */
+    padding-left: 10px; /* Relleno a la izquierda */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilos para los iconos */
+.main-input a {
+    width: 25px; /* Ancho fijo */
+    height: 25px; /* Altura fija */
+    background-size: contain; /* Ajustar el tamaño del ícono al contenedor */
+    background-repeat: no-repeat; /* No repetir el ícono */
+    margin-left: 10px; /* Añadir margen izquierdo para separación */
+}
+
+/* Estilos específicos para el ícono de búsqueda */
+.main-input .search-icon {
+    background-image: url('lupa.png'); /* Imagen de ícono de lupa */
+    width:15px;
+}
+
+/* Estilos específicos para el ícono de micrófono */
+.main-input .micro-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png'); /* Imagen de ícono de micrófono */
+}
+
+/* Estilos específicos para el ícono de cámara */
+.main-input .cam-icon {
+    background-image: url('https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg'); /* Imagen de ícono de cámara */
+}
+
+/* Estilos para la sección de botones principal */
+main .main-buttons {
+    width: 550px; /* Ancho fijo */
+    margin: 20px auto 0; /* Centrar horizontalmente con margen superior */
+}
+
+/* Estilos para los botones en la sección de botones principal */
+main .main-buttons div {
+    display: inline; /* Mostrar los elementos en línea */
+}
+
+/* Estilos para los botones en la sección de botones principal */
+main .main-buttons button {
+    margin-top: 30px; /* Margen superior */
+    border: none; /* Sin borde */
+    height: 40px; /* Altura fija */
+    padding: 0 16px; /* Relleno interno */
+    border: 1px solid #f2f2f2; /* Borde con color */
+    border-radius: 4px; /* Bordes redondeados */
+    color: #3c4043; /* Color del texto */
+    background-color: #f8f9fa; /* Color de fondo */
+    font-size: 14px; /* Tamaño de fuente */
+    text-transform: none; /* No transformar texto */
+    line-height: 27px; /* Altura de línea */
+    min-width: 54px; /* Ancho mínimo */
+    box-shadow: 0 1px 1px rgba(0,0,0,.1); /* Sombra */
+    cursor: pointer; /* Mostrar cursor de mano */
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #f2f2f2; /* Color de fondo */
+    height: auto; /* Altura automática */
+    width: 100%; /* Ancho completo */
+    border-top: 1px solid #e4e4e4; /* Borde superior */
+    display: flex; /* Mostrar los elementos en línea */
+    justify-content: space-between; /* Distribuir los elementos uniformemente */
+}
+
+/* Estilos para la sección izquierda del pie de página */
+.footer-left {
+    padding: 15px 30px; /* Relleno interno */
+   /*margin-right: 100px; /* Mover a la izquierda*/
+   /*margin-left: 20px; /* Mover a la derecha*/
+
+}
+
+/* Estilos para la sección derecha del pie de página */
+.footer-right {
+    padding: 15px 30px; /* Relleno interno */
+    margin-top: 20px;
+}
+
+/* Estilos para los enlaces en el pie de página */
+.footer a {
+    color: #171515; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado */
+    margin-left: 20px; /* Margen izquierdo */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+/* Estilos para la palabra México */
+.footer-left span {
+    display: block; /* Mostrar como bloque */
+    font-size: 14px; /* Tamaño de fuente */
+    margin-bottom: 10px; /* Margen inferior */
+}

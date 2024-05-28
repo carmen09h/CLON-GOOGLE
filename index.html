@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ENCABEZADO -->
+    <header>
+        <nav>
+            <ul class="nav-right-section">
+                <li>
+                    <a href="https://mail.google.com/mail/u/0/?ogbl#inbox">Gmail</a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/imghp?hl=es-419&authuser=0&ogbl">Imágenes</a>
+                </li>
+                <li class="menu">
+                    <a href="#"></a>
+                </li>
+                <li class="img-perfil">
+                    <a href="#">
+                        <img src="Imagen de usuario.png" alt="Perfil">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- MAIN - contenido principal -->
+    <main>
+        <section class="main-logo">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Logo del buscador Google original">
+        </section>
+        <!-- SECTION INPUT -->
+        <section class="main-input">
+            <form action="https://www.google.com/search" method="GET" target="_blank" class="main-input-container">
+                <!-- Ícono de búsqueda -->
+                <a class="search-icon" href="#"></a>
+                <input type="text" name="q" id="search-input" placeholder="Buscar en Google o escribir una URL">
+                <a class="micro-icon" href="#" onclick="openMicrophone()"></a>
+                <a class="cam-icon" href="#" onclick="openCamera()"></a>
+            </form>
+        </section>
+        <!-- SECTION BUTTONS -->
+        <section class="main-buttons">
+            <div>
+                <button onclick="searchWithGoogle()">Buscar con Google</button>
+            </div>
+            <div>
+                <button>Voy a tener suerte</button>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->     
+   <!-- PIE DE PAGINA-->    
+    <div class="footer">
+        <div class="footer-left">
+            <span>México</span> <!-- Añadir la palabra México -->
+            <!-- Añadir los links-->
+            <a href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a>
+            <a href="https://www.google.com/intl/es-419_mx/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a>
+            <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Negocios</a>
+            <a href="https://google.com/search/howsearchworks/?fg=1">Como funciona la Busqueda</a>
+        </div>
+        <div class="footer-right">
+            <a href="https://policies.google.com/privacy?hl=es-419&fg=1">Privacidad</a>
+            <a href="https://policies.google.com/terms?hl=es-419&fg=1">Condiciones</a>
+            <a href="#">Preferencias</a>
+        </div>
+    </div>
+</body>
+</html>
