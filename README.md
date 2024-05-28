@@ -1,2 +1,2 @@
 # CLON-GOOGLE
-Google interface.
+Google Interface.
